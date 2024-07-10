@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo ser millonario</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,7 +13,10 @@
             <ul>
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#content">Contenido</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
                 <li><a href="#contact">Contacto</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </nav>
     </header>
@@ -34,54 +38,154 @@
                 <p>Invertir es clave para hacer crecer tu dinero. Considera opciones como la bolsa de valores, bienes raíces o fondos de inversión. Siempre investiga antes de invertir.</p>
             </article>
         </section>
+
+        <section id="videos">
+            <h2>Galería de Videos</h2>
+            <video width="320" height="240" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video width="320" height="240" controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"Gracias a estos consejos, he logrado ahorrar más del 20% de mi salario mensual."</p>
+                <cite>- Juan Pérez</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Las inversiones recomendadas aquí me han permitido duplicar mis ahorros en un año."</p>
+                <cite>- Ana García</cite>
+            </blockquote>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Consejos para aumentar tus ingresos</h3>
+                <p>Explora diferentes maneras de aumentar tus ingresos, desde trabajos freelance hasta inversiones en startups.</p>
+                <a href="blog_post_1.html">Leer más...</a>
+            </article>
+            <article>
+                <h3>Cómo gestionar tus deudas</h3>
+                <p>Aprende estrategias efectivas para pagar tus deudas y mejorar tu historial crediticio.</p>
+                <a href="blog_post_2.html">Leer más...</a>
+            </article>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Cómo ser millonario. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
     </footer>
 </body>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-main {
-    padding: 20px;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+        main {
+            padding: 20px;
+        }
 
+        section {
+            margin-bottom: 20px;
+        }
+
+        video {
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
     </style>
 </html>
